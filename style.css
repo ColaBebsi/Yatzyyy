@@ -73,3 +73,29 @@ a:hover {
     border-radius: 5px;
     margin-left: 5px;
 }
+
+.SpeechBubbleL {
+    position: absolute;
+	background: #00aabb;
+    border-radius: .4em;
+    width: 300px;
+    height: 200px;
+    left: 20px;
+    top: 70px;
+}
+
+.SpeechBubbleL:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	border: 20px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
