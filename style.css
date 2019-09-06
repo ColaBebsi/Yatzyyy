@@ -1,0 +1,75 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+}
+ 
+
+table {
+ border: 2px solid black;
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+input {
+    border: none;
+    height: 19px;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.dark-grey {
+ background-color: #454545;
+}
+.grey {
+ background-color: #7d7d7d;
+}
+.light-grey {
+ background-color: #b8b8b8;
+}
+
+::placeholder {
+    color: black;
+}
+
+a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #3C7A89;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #2E4756;
+}
+
+.chattbubbla {
+    border: 2px solid #2E4756;
+    width: 500px;
+    height: 500px;
+}
+
+#skickaknapp {
+    margin-top: 465px;
+    float:right;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #16262E;
+    border-radius: 5px;
+}
+
+.chattbubbla input {
+    background: #B8ced4;
+    margin-top: 463px;
+    width: 84%;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
