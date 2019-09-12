@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="style.css" rel="stylesheet">
+	<script src="main.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<div id="container">
+		<a href="chatt.html" class="button">Gå till chattrummet</a>
+		<div id="leftcontainer">
+		<table>
+			<tr>
+				<td class="dark-grey">Spelare/Players</td>
+				<td><input type="text" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="text" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="text" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="text" placeholder="Spelare" class="light-grey"></td>
+			</tr>
+			<tr>
+				<td>Ettor/Ones</td>
+				<td><input id="player1_ones" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input id="player2_onces" type="number" placeholder="Poäng"></td>
+				<td><input id="player3_onces" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input id="player4_onces" type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Tvåor/Twos</td>
+				<td><input id="player1_twos" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Treor/Threes</td>
+				<td><input id="player1_threes" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Fyror/Fours</td>
+				<td><input id="player1_fours" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Femmor/Fives</td>
+				<td><input id="player1_fives" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Sexor/Sixes</td>
+				<td><input id="player1_sixes" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td class="dark-grey">Summa/Sum</td>
+				<td>
+					<p id="player1_sum" type="number" class="light-grey"></p>
+				</td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+			</tr>
+			<tr>
+				<td class="dark-grey">Bonus</td>
+				<td>
+					<p id="player1_bonus" type="number" placeholder="Bonus" class="light-grey"></p>
+				</td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+			</tr>
+			<tr>
+				<td>Par/Pairs</td>
+				<td><input id="player1_pairs" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Två par/Two pairs</td>
+				<td><input id="player1_twopairs" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Tretal/Three of a kind</td>
+				<td><input id="player1_threeofakind" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Fyrtal/Four of a kind</td>
+				<td><input id="player1_fourofakind" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Liten stege/Small straight</td>
+				<td><input id="player1_straight" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Stor stege/Large straight</td>
+				<td><input id="player1_largestraight" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Kåk/Full house</td>
+				<td><input id="player1_fullhouse" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>Chans/Chance</td>
+				<td><input id="player1_chance" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td>YATZY</td>
+				<td><input id="player1_yatzy" type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+				<td><input type="number" placeholder="Poäng" class="grey"></td>
+				<td><input type="number" placeholder="Poäng"></td>
+			</tr>
+			<tr>
+				<td class="dark-grey">Totalt/Total</td>
+				<td><p id="player1_total" type="number" placeholder="Spelare" class="light-grey"></p></td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+				<td><input type="number" placeholder="Spelare" class="light-grey"></td>
+			</tr>
+
+		</table>
+			<button type="button" id="sumBtn">Räkna ut</button>
+		</div>
+		<div class="dices-container">
+			<div class="dice"><p></p></div>
+			<div class="dice"><p></p></div>
+			<div class="dice"><p></p></div>
+			<div class="dice"><p></p></div>
+			<div class="dice"><p></p></div>
+			<button type="button" id="rollTheDice">Kasta tärningarna</button>
+		</div>
+		
+	</div>
+</body>
+
+</html>
