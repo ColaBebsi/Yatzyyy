@@ -1,15 +1,28 @@
 * {
    padding: 0px;
    margin: 0px;
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   font-size: 12px;
+   font-family: Avenir, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 12px; 
+}
+
+h1 {
+   font-family: 'Futura', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 45px;
+   margin-left: 25px;
+   margin-top: 20px;
+   border: 2px solid black;
+   padding: 10px;
+   
+   
 }
  
 
 table {
  	border: 2px solid black;
 	border-collapse: collapse;
- 	border-spacing: 0;
+    border-spacing: 0;
+    margin-left: 100px;
+    margin-top: 100px;
 }
 
 input {
@@ -33,6 +46,7 @@ td {
 
 ::placeholder {
    color: black;
+   left: 20px;
 }
 
 a {
@@ -52,26 +66,32 @@ a:hover {
    border: 2px solid #2E4756;
    width: 500px;
    height: 500px;
+   border-radius: 5px;
+   left: 5px;
 }
 
 #skickaknapp {
    margin-top: 465px;
-   float:right;
+   float: right;
    color: white;
    display: inline-block;
    text-decoration: none;
    padding: 10px;
    background-color: #16262E;
    border-radius: 5px;
+   width: 48px;
+   text-align: center;
+   margin-top: 463px;
 }
 
 .chattbubbla input {
    background: #B8ced4;
    margin-top: 463px;
-   width: 84%;
+   width: 430px;
    height: 35px;
    border-radius: 5px;
-   margin-left: 5px;
+   margin-left: 1px;
+  
 }
 
 .SpeechBubbleL {
@@ -79,8 +99,8 @@ a:hover {
 	background: #00aabb;
    border-radius: .4em;
    width: 300px;
-   height: 200px;
-   left: 20px;
+   height: 150px;
+   left: 10px;
    top: 70px;
 }
 
@@ -99,3 +119,38 @@ a:hover {
 	margin-bottom: -20px;
 }
 
+.SpeechBubbleR {
+   position: absolute;
+	background: #00aabb;
+   border-radius: .4em;
+   width: 300px;
+   height: 150px;
+   right: 925px;
+   top: 310px;
+}
+
+.SpeechBubbleR:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	width: 0px;
+	height: 0px;
+	border: 20px solid transparent;
+	border-top-color: #00aabb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: 30px;
+	margin-bottom: -20px;
+}
+
+
+
+p {
+   font-family: 'Avenir', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-size: 14px;
+   
+}
