@@ -4,12 +4,35 @@
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 12px;
 }
- 
+
+ h2{
+    font-size: 18px;
+ }
+
+ #container {
+    margin: 0 auto;
+ }
+
+ #sumBtn {
+    float: none;
+ }
 
 table {
  	border: 2px solid black;
 	border-collapse: collapse;
- 	border-spacing: 0;
+    border-spacing: 0;
+    animation: bigToNormal 3s;
+    float: left;
+}
+
+@keyframes bigToNormal{
+   from{
+      transform: scale(3);
+   }
+
+   to {
+      transform: scale(1);
+   }
 }
 
 input {
@@ -19,6 +42,22 @@ input {
 
 td {
    border: 2px solid black;
+}
+
+.dices-container {
+   border: 2px solid black;
+   width: 700x;
+   height: 500px;
+   border-radius: 5px;
+   float: right;
+}
+
+.dice {
+   border: 2px solid black;
+   width: 100px;
+   height: 100px;
+   border-radius: 5px;
+   float: left;
 }
 
 .dark-grey {
@@ -52,6 +91,7 @@ a:hover {
    border: 2px solid #2E4756;
    width: 500px;
    height: 500px;
+   
 }
 
 #skickaknapp {
@@ -63,6 +103,9 @@ a:hover {
    padding: 10px;
    background-color: #16262E;
    border-radius: 5px;
+}
+#skickaknapp:hover{
+   background-color: #00aabb;
 }
 
 .chattbubbla input {
@@ -80,8 +123,23 @@ a:hover {
    border-radius: .4em;
    width: 300px;
    height: 200px;
-   left: 20px;
-   top: 70px;
+   left: 10px;
+   top: 60px;
+   animation: smallToBig 3s;
+}
+
+@keyframes smallToBig {
+   from {
+      transform: scale(0);
+   /*width: 100px;
+   height: 50px;*/
+   }
+
+   to {
+      transform: scale(1);
+   /*width: 300px;
+   height: 200px;*/
+   }
 }
 
 .SpeechBubbleL:after {
@@ -99,3 +157,52 @@ a:hover {
 	margin-bottom: -20px;
 }
 
+.SpeechBubbleR {
+   position: absolute;
+	background: #0cbb06;
+   border-radius: .4em;
+   width: 300px;
+   height: 200px;
+   left: 190px;
+   top: 290px;
+   animation: smallToBig 3s;
+}
+
+.SpeechBubbleR:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	border: 20px solid transparent;
+	border-top-color: #0cbb06;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+
+/*
+position: relative;
+    background: #00aabb;
+    border-radius: .4em;
+}
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #00aabb;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+
+*/
