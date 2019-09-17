@@ -15,11 +15,28 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	let inputfullhouse = document.getElementById("player1_fullhouse");
 	let inputchance = document.getElementById("player1_chance");
 	let inputyatzy = document.getElementById("player1_yatzy");
-	let button = document.getElementById("sumBtn");
+	
 	let bonus = 0;
 	
+	input.addEventListener("change", beräkna (e) {
 	
-	button.addEventListener("click", function(e) {
+	input1.addEventListener("change", function(e) {
+	input2.addEventListener("change", function(e) {
+	input3.addEventListener("change", function(e) {
+	input4.addEventListener("change", function(e) {
+	input5.addEventListener("change", function(e) {
+	input6.addEventListener("change", function(e) {
+	inputpairs.addEventListener("change", function(e) {
+	inputtwopairs.addEventListener("change", function(e) {
+	inputthreeofakind.addEventListener("change", function(e) {
+	inputfourofakind.addEventListener("change", function(e) {
+	inputstraight.addEventListener("change", function(e) {
+	inputlargestraight.addEventListener("change", function(e) {
+	inputfullhouse.addEventListener("change", function(e) {
+	inputchance.addEventListener("change", function(e) {
+	inputyatzy.addEventListener("change", function(e) {
+
+	inputchance
 		input1 = Number(input1.value);
 		input2 = Number(input2.value);
 		input3 = Number(input3.value);
