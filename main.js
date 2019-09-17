@@ -1,6 +1,10 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-	
-	let input1 = document.getElementById("player1_ones");
+document.addEventListener("DOMContentLoaded", function (event) {
+
+	let inputs = getElementsByTagName('input');
+	inputs = Number(inputs.value);
+
+
+	/*let input1 = document.getElementById("player1_ones");
 	let input2 = document.getElementById("player1_twos");
 	let input3 = document.getElementById("player1_threes");
 	let input4 = document.getElementById("player1_fours");
@@ -15,13 +19,48 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	let inputfullhouse = document.getElementById("player1_fullhouse");
 	let inputchance = document.getElementById("player1_chance");
 	let inputyatzy = document.getElementById("player1_yatzy");
-	let summary = document.getElementById("player1_sum");
+	let summary = document.getElementById("player1_sum"); 
 	let bonus = 0;
 	let total = 0;
 
-	/*function summarize () {
-		let total = (summary + inputpairs + inputtwopairs + inputthreeofakind + inputfourofakind + inputstraight + inputlargestraight + 
-			inputfullhouse + inputchance + inputyatzy + bonus);
+	input1 = Number(input1.value);
+	input2 = Number(input2.value);
+	input3 = Number(input3.value);
+	input4 = Number(input4.value);
+	input5 = Number(input5.value);
+	input6 = Number(input6.value);
+	inputpairs = Number(inputpairs.value);
+	inputtwopairs = Number(inputtwopairs.value);
+	inputthreeofakind = Number(inputthreeofakind.value);
+	inputfourofakind = Number(inputfourofakind.value);
+	inputstraight = Number(inputstraight.value);
+	inputlargestraight = Number(inputlargestraight.value);
+	inputfullhouse = Number(inputfullhouse.value);
+	inputchance = Number(inputchance.value);
+	inputyatzy = Number(inputyatzy.value);
+	*/
+
+	console.log(inputs);
+	/*
+	if (summary >= 63) {
+		bonus = 50;
+		document.getElementById("player1_bonus").innerHTML = bonus;
+	} else {
+		document.getElementById("player1_bonus").innerHTML = bonus;
+	}
+
+	document.getElementById("player1_sum").innerHTML = summary;
+
+	total = (summary + inputpairs + inputtwopairs + inputthreeofakind + inputfourofakind + inputstraight + inputlargestraight +
+		inputfullhouse + inputchance + inputyatzy + bonus);
+
+	document.getElementById("player1_total").innerHTML = total;
+
+
+	//denna funktionen räknar ut allas värden och stoppar in det i total
+	function summarize () {
+		let summary = inputpairs + inputtwopairs + inputthreeofakind + inputfourofakind + inputstraight + inputlargestraight + 
+			inputfullhouse + inputchance + inputyatzy + bonus;
 		
 		document.getElementById("player1_total").innerHTML = total;
 	};
@@ -40,39 +79,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	inputlargestraight.addEventListener("change", summarize);
 	inputfullhouse.addEventListener("change", summarize);
 	inputchance.addEventListener("change", summarize);
-	inputyatzy.addEventListener("change", summarize);*/
+	inputyatzy.addEventListener("change", summarize); */
 
-		input1 = Number(input1.value);
-		input2 = Number(input2.value);
-		input3 = Number(input3.value);
-		input4 = Number(input4.value);
-		input5 = Number(input5.value);
-		input6 = Number(input6.value);
-		inputpairs = Number(inputpairs.value);
-		inputtwopairs = Number(inputtwopairs.value);
-		inputthreeofakind = Number(inputthreeofakind.value);
-		inputfourofakind = Number(inputfourofakind.value);
-		inputstraight = Number(inputstraight.value);
-		inputlargestraight = Number(inputlargestraight.value);
-		inputfullhouse = Number(inputfullhouse.value);
-		inputchance = Number(inputchance.value);
-		inputyatzy = Number(inputyatzy.value);
-		summary = input1 + input2 + input3 + input4 + input5 + input6;
-		
-		if (summary >= 63) {
-			bonus = 50;
-			document.getElementById("player1_bonus").innerHTML = bonus;
-		} else {
-			document.getElementById("player1_bonus").innerHTML = bonus;
+	function getRandomInt() {
+		return Math.floor(Math.random() * 6) + 1;
+	}
+
+	document.getElementById('rollTheDice').addEventListener('click', function(event) {
+		for (let i = 1; i <= 5; i++) {
+			let checkbox = document.getElementById('checkDice' + i);
+			let dice = document.getElementById('dice' + i);
+
+			if (!checkbox.checked) {
+				dice.value = getRandomInt();
+			}
 		}
-		
-		document.getElementById("player1_sum").innerHTML = summary;
-		
-		total = (summary + inputpairs + inputtwopairs + inputthreeofakind + inputfourofakind + inputstraight + inputlargestraight + 
-			inputfullhouse + inputchance + inputyatzy + bonus);
+	});
 
-		document.getElementById("player1_total").innerHTML = total;
-	
 
 	/*let input2 = document.getElementById("player1_twos");
 	input2.addEventListener("input", function(e) {
@@ -86,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	};*/
 
 });
-	
 
-	
+
+
 
